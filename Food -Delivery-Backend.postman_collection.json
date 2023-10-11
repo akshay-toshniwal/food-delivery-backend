@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "6af8bccd-beea-4d93-a5c5-1fcf3839480d",
+		"name": "Food -Delivery-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30423459"
+	},
+	"item": [
+		{
+			"name": "User Regsitration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n    {\r\n     \"email\":\"akshaytoshniwal05@user.com\",\r\n     \"password\":\"12345678\",\r\n     \"first_name\": \"Akshay\",\r\n     \"last_name\": \"T\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/account/register/user",
+				"description": "User Registration"
+			},
+			"response": []
+		},
+		{
+			"name": "Rider Registration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n    {\r\n     \"email\":\"akshaytoshniwal05@rider.com\",\r\n     \"password\":\"12345678\",\r\n     \"first_name\": \"Akshay\",\r\n     \"last_name\": \"T\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/account/register/rider"
+			},
+			"response": []
+		},
+		{
+			"name": "Restaurant Manger Registration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n    {\r\n     \"email\":\"akshaytoshniwal05@restaurant.com\",\r\n     \"password\":\"12345678\",\r\n     \"first_name\": \"Akshay\",\r\n     \"last_name\": \"T\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/account/register/restaurant"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n    {\r\n     \"email\":\"akshaytoshniwal05@restaurant.com\",\r\n     \"password\":\"12345678\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/account/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Restaurant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDQ1NTY3LCJpYXQiOjE2OTcwMTY3NjcsImp0aSI6IjNmNGI5ZWFkOTg1NjQ0OWRhYjVhYWE4YjlkMjYzOGRjIiwidXNlcl9pZCI6MTJ9.yxeoTs3hWkeHQxG1P2cVPALaYPzRBrSqJexanjDLZHw"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n    {\r\n     \"restaurant_name\":\"Tiaskbf akjhsd\",\r\n     \"restaurant_phone\":\"1234567890\",\r\n     \"cuisines\":[\r\n         {\"name\":\"Japnese\"},\r\n         {\"name\":\"Italian\"}\r\n     ],\r\n     \"opening_time\":\"10:00\",\r\n     \"closing_time\":\"22:00\",\r\n     \"latitude\": 22.00909,\r\n     \"longitude\":22.00100\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/restaurant/update"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Restaurant Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDQ4NzEzLCJpYXQiOjE2OTcwMTk5MTMsImp0aSI6ImVlMDc4Y2I5M2IxODQwMzBiOWMyNjkyYzE3MjI5YTc3IiwidXNlcl9pZCI6MTN9.JBQXbdTUu8b0gKy3MlRkVEcHB-WdUbO96FpjkubBE_U"
+					}
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n    {\r\n     \"latitude\": 20.2029,\r\n     \"longitude\":20.2031\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/restaurant/update/7"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cuisine",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDQ4NzEzLCJpYXQiOjE2OTcwMTk5MTMsImp0aSI6ImVlMDc4Y2I5M2IxODQwMzBiOWMyNjkyYzE3MjI5YTc3IiwidXNlcl9pZCI6MTN9.JBQXbdTUu8b0gKy3MlRkVEcHB-WdUbO96FpjkubBE_U"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"name\":\"Indian\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/restaurant/7/add-cuisine"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Menu",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDQ4NzEzLCJpYXQiOjE2OTcwMTk5MTMsImp0aSI6ImVlMDc4Y2I5M2IxODQwMzBiOWMyNjkyYzE3MjI5YTc3IiwidXNlcl9pZCI6MTN9.JBQXbdTUu8b0gKy3MlRkVEcHB-WdUbO96FpjkubBE_U"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"item\":\"Panner\",\r\n    \"price\":120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/restaurant/7/add-menu-item"
+			},
+			"response": []
+		},
+		{
+			"name": "Menu of Restaurant",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDQ4NzEzLCJpYXQiOjE2OTcwMTk5MTMsImp0aSI6ImVlMDc4Y2I5M2IxODQwMzBiOWMyNjkyYzE3MjI5YTc3IiwidXNlcl9pZCI6MTN9.JBQXbdTUu8b0gKy3MlRkVEcHB-WdUbO96FpjkubBE_U"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"item\":\"Panner\",\r\n    \"price\":120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/restaurant/7/menu"
+			},
+			"response": []
+		},
+		{
+			"name": "Orders by User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDQ5OTk4LCJpYXQiOjE2OTcwMjExOTgsImp0aSI6IjJlMjI1NWU5NTYyYjQ4OGY5OWUzZGU5NmZlZjUzYjVlIiwidXNlcl9pZCI6MTB9.K1Q4wmpUrL8omiOysja7K8OhXLTmdvw9APBn4Z3yl9A"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"item\":\"Panner\",\r\n    \"price\":120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/order/orders/list"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDUwMjQ3LCJpYXQiOjE2OTcwMjE0NDcsImp0aSI6IjI0YWMyMDgwNzZmNzRhNTk5OTU1NjMzNzQ1OTM4Y2RhIiwidXNlcl9pZCI6MTF9.v4QqO39drKmmlMQW6xO5LLBrKGBuo65UxXdpcVUtZNs"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"restaurant_id\":\"7\",\r\n    \"menu_items\":[\r\n        {\r\n            \"menu_item\":\"Panner\",\r\n            \"quantity\":2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/order/create-order"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Rider Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDUwMjQ3LCJpYXQiOjE2OTcwMjE0NDcsImp0aSI6IjI0YWMyMDgwNzZmNzRhNTk5OTU1NjMzNzQ1OTM4Y2RhIiwidXNlcl9pZCI6MTF9.v4QqO39drKmmlMQW6xO5LLBrKGBuo65UxXdpcVUtZNs"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"longitude\":20.2020,\r\n    \"latitude\":20.2021\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/rider/update/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Rider Location",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDUwMjQ3LCJpYXQiOjE2OTcwMjE0NDcsImp0aSI6IjI0YWMyMDgwNzZmNzRhNTk5OTU1NjMzNzQ1OTM4Y2RhIiwidXNlcl9pZCI6MTF9.v4QqO39drKmmlMQW6xO5LLBrKGBuo65UxXdpcVUtZNs"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"longitude\":20.2024,\r\n    \"latitude\":20.2030\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/rider/update/location"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order Status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDUwMjQ3LCJpYXQiOjE2OTcwMjE0NDcsImp0aSI6IjI0YWMyMDgwNzZmNzRhNTk5OTU1NjMzNzQ1OTM4Y2RhIiwidXNlcl9pZCI6MTF9.v4QqO39drKmmlMQW6xO5LLBrKGBuo65UxXdpcVUtZNs"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/rider/update/order"
+			},
+			"response": []
+		},
+		{
+			"name": "Delivered Orders by Rider",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDUwMjQ3LCJpYXQiOjE2OTcwMjE0NDcsImp0aSI6IjI0YWMyMDgwNzZmNzRhNTk5OTU1NjMzNzQ1OTM4Y2RhIiwidXNlcl9pZCI6MTF9.v4QqO39drKmmlMQW6xO5LLBrKGBuo65UxXdpcVUtZNs"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/rider/delivered/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "Assign Pickup to nearest Rider",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk3MDUwNjAzLCJpYXQiOjE2OTcwMjE4MDMsImp0aSI6ImVkMGU5ZDM0MzJhNzQ3YTRiNjYxMjRhOTc5NzJhNDUzIiwidXNlcl9pZCI6MTJ9.0qauP3ZVZiUtLOcF1lKKx4-LHC4Btu0ydPlC2vzECmc"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTE3MjQ5LCJpYXQiOjE2OTY5MTY5NDksImp0aSI6ImViNjc2ZDAwNTAwZTQ0ZTViYTVjYWFjYTRkNjJlYWY2IiwidXNlcl9pZCI6MX0.6j2xsoH2O9fY3BjMX_xT2C-HM1I5jfBPSeiZMXum6gs",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/api/restaurant/nearest-rider/7/12"
+			},
+			"response": []
+		}
+	]
+}
